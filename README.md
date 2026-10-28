@@ -3,6 +3,10 @@
 This public repository holds **no app code, user data, credentials or paid service configuration**.
 It checks two public Production GET routes from GitHub Actions, outside the app:
 
+> **Setup incomplete:** the scheduled workflow has not been installed yet.
+> There is no active monitoring or alerting until the workflow is added and
+> a successful run is verified.
+
 - `/api/healthz/live`: HTTP 200, JSON and the expected API liveness marker.
 - `/api/__clerk/v1/environment`: HTTP 200 and JSON from the sign-in route.
 
